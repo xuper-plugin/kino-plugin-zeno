@@ -1,0 +1,197 @@
+{
+  "id": "zeno-fm",
+  "name": "Zeno FM",
+  "version": "0.1.0",
+  "apiVersion": 13,
+  "entry": "plugin.js",
+  "icon": "icon.png",
+  "description": "Radio en vivo y podcasts de Zeno.FM: miles de emisoras por país y género, y podcasts con todos sus episodios.",
+  "author": "xuper-plugin",
+  "homepage": "https://github.com/xuper-plugin/kino-plugin-zeno",
+  "hosts": [
+    "zeno.fm",
+    "*.zeno.fm"
+  ],
+  "capabilities": [
+    "search",
+    "home",
+    "browse",
+    "episodes",
+    "resolve",
+    "channels"
+  ],
+  "liveStreamHosts": "any",
+  "streamHosts": "any",
+  "color": "#8B5CF6",
+  "section": {
+    "label": "Radio",
+    "labelEn": "Radio"
+  },
+  "theme": {
+    "accent": "#8B5CF6",
+    "onAccent": "#12081F",
+    "background": "#0E0E12",
+    "surface": "#1B1B22",
+    "highlight": "#FFB703"
+  },
+  "settings": [
+    {
+      "key": "country",
+      "type": "select",
+      "label": "País de las emisoras",
+      "labelEn": "Stations' country",
+      "default": "auto",
+      "options": [
+        {
+          "value": "auto",
+          "label": "Automático (según tu idioma)",
+          "labelEn": "Automatic (from your language)"
+        },
+        {
+          "value": "all",
+          "label": "Todo el mundo",
+          "labelEn": "Worldwide"
+        },
+        {
+          "value": "CO",
+          "label": "Colombia",
+          "labelEn": "Colombia"
+        },
+        {
+          "value": "MX",
+          "label": "México",
+          "labelEn": "Mexico"
+        },
+        {
+          "value": "ES",
+          "label": "España",
+          "labelEn": "Spain"
+        },
+        {
+          "value": "AR",
+          "label": "Argentina",
+          "labelEn": "Argentina"
+        },
+        {
+          "value": "CL",
+          "label": "Chile",
+          "labelEn": "Chile"
+        },
+        {
+          "value": "PE",
+          "label": "Perú",
+          "labelEn": "Peru"
+        },
+        {
+          "value": "VE",
+          "label": "Venezuela",
+          "labelEn": "Venezuela"
+        },
+        {
+          "value": "EC",
+          "label": "Ecuador",
+          "labelEn": "Ecuador"
+        },
+        {
+          "value": "BO",
+          "label": "Bolivia",
+          "labelEn": "Bolivia"
+        },
+        {
+          "value": "UY",
+          "label": "Uruguay",
+          "labelEn": "Uruguay"
+        },
+        {
+          "value": "PY",
+          "label": "Paraguay",
+          "labelEn": "Paraguay"
+        },
+        {
+          "value": "GT",
+          "label": "Guatemala",
+          "labelEn": "Guatemala"
+        },
+        {
+          "value": "CR",
+          "label": "Costa Rica",
+          "labelEn": "Costa Rica"
+        },
+        {
+          "value": "PA",
+          "label": "Panamá",
+          "labelEn": "Panama"
+        },
+        {
+          "value": "DO",
+          "label": "República Dominicana",
+          "labelEn": "Dominican Republic"
+        },
+        {
+          "value": "US",
+          "label": "Estados Unidos",
+          "labelEn": "United States"
+        },
+        {
+          "value": "BR",
+          "label": "Brasil",
+          "labelEn": "Brazil"
+        },
+        {
+          "value": "GB",
+          "label": "Reino Unido",
+          "labelEn": "United Kingdom"
+        }
+      ]
+    },
+    {
+      "key": "podcastLanguage",
+      "type": "select",
+      "label": "Idioma de los podcasts",
+      "labelEn": "Podcast language",
+      "default": "auto",
+      "options": [
+        {
+          "value": "auto",
+          "label": "Automático (según tu idioma)",
+          "labelEn": "Automatic (from your language)"
+        },
+        {
+          "value": "all",
+          "label": "Todos",
+          "labelEn": "All"
+        },
+        {
+          "value": "Spanish",
+          "label": "Español",
+          "labelEn": "Spanish"
+        },
+        {
+          "value": "English",
+          "label": "Inglés",
+          "labelEn": "English"
+        },
+        {
+          "value": "Portuguese",
+          "label": "Portugués",
+          "labelEn": "Portuguese"
+        },
+        {
+          "value": "French",
+          "label": "Francés",
+          "labelEn": "French"
+        },
+        {
+          "value": "German",
+          "label": "Alemán",
+          "labelEn": "German"
+        },
+        {
+          "value": "Italian",
+          "label": "Italiano",
+          "labelEn": "Italian"
+        }
+      ]
+    }
+  ]
+}

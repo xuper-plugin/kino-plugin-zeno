@@ -1,0 +1,14 @@
+{
+  "name": "kino-plugin-zeno-fm",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check:built": "node scripts/build.mjs --check",
+    "test": "node --test test/*.test.mjs",
+    "validate": "node sdk/validate.mjs ."
+  },
+  "devDependencies": {
+    "esbuild": "^0.21.0"
+  }
+}
